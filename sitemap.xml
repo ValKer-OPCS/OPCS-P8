@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+
+  <url>
+    <loc>https://valker-opcs.github.io/OPCS-P8/</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+
+  <url>
+    <loc>https://valker-opcs.github.io/OPCS-P8/#about</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://valker-opcs.github.io/OPCS-P8/#gallery</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/concerts/aaron-paul/aaron-paul-wnX-fXzB6Cw-unsplash.webp</image:loc>
+      <image:caption>Photo de la scène d'un concert depuis la foule</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/concerts/austin-neill/austin-neill-hgO1wFPXl3I-unsplash.webp</image:loc>
+      <image:caption>Photo d'un chanteur lors d'un concert</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/entreprise/ali-morshedlou/ali-morshedlou-WMD64tMfc4k-unsplash.webp</image:loc>
+      <image:caption>Photo d'un homme en costume</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/entreprise/jason-goodman/jason-goodman-tHO1_OuKbg0-unsplash.webp</image:loc>
+      <image:caption>Photo de deux femmes dans un open space</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/entreprise/mateus-campos-felipe/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp</image:loc>
+      <image:caption>Photo d'une femme dans un bureau</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/mariage/hannah-busing/hannah-busing-RvF2R_qMpRk-unsplash.webp</image:loc>
+      <image:caption>Photo de deux personnes se tenant les mains</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/mariage/jakob-owens/jakob-owens-SiniLJkXhMc-unsplash.webp</image:loc>
+      <image:caption>Photo de jeunes mariés se tenant la main</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/portraits/ade-tunji/ade-tunji-rVkhWWZFAtQ-unsplash.webp</image:loc>
+      <image:caption>Photo d'un homme qui ferme les yeux</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valker-opcs.github.io/OPCS-P8/assets/images/gallery/portraits/nino-van-prattenburg/nino-van-prattenburg--443cl1uR_8-unsplash.webp</image:loc>
+      <image:caption>Photo d'une jeune femme portant des lunettes</image:caption>
+    </image:image>
+
+  </url>
+
+
+  <url>
+    <loc>https://valker-opcs.github.io/OPCS-P8/#services</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://valker-opcs.github.io/OPCS-P8/#contact</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,10 @@
+
+User-agent: *
+Disallow: /assets/bootstrap/
+Disallow: /assets/scripts-min.js
+Disallow: /assets/maugallery.js
+Disallow: /assets/style-min.css
+
+Allow: /
+
+Sitemap: https://valker-opcs.github.io/OPCS-P8/sitemap.xml
