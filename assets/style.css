@@ -89,7 +89,6 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -99,7 +98,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: hsl(54, 43%, 30%);
+	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
