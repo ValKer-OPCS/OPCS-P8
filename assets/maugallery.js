@@ -189,10 +189,10 @@ Object.assign(_mauGalleryManager, {
         const isDeepCopy = true;
         if (galleryItem.picture) {
           currentElement = galleryItem.picture.cloneNode(isDeepCopy);
-          this.initializeImg(currentElement.querySelector('img'), htmlAttributesWhitelist);
+          this.initializeImg(currentElement.querySelector('img'), htmlAttributesWhitelist, true);
         } else if (galleryItem.item.tagName === 'IMG') {
           currentElement = galleryItem.item.cloneNode(isDeepCopy);
-          this.initializeImg(currentElement, htmlAttributesWhitelist);
+          this.initializeImg(currentElement, htmlAttributesWhitelist, true);
         }
 
         if (!currentElement) return;
@@ -236,31 +236,38 @@ Object.assign(_mauGalleryManager, {
       carouselElement.classList.remove('active');
     }
 
-    initializeImg(element, htmlAttributesWhitelist) {
-      function purgeModalImg(element, htmlAttributesWhitelist) {
+   initializeImg(element, htmlAttributesWhitelist, forceOriginalSrc = false) {
+
+    function purgeModalImg(element, htmlAttributesWhitelist) {
         const toRemove = [];
         for (let i = 0, attrs = element.attributes; attrs[i]; i++) {
-          const attrKey = attrs[i].nodeName;
-
-          if (htmlAttributesWhitelist.indexOf(attrKey) === -1) toRemove.push(attrKey);
+            const attrKey = attrs[i].nodeName;
+            if (htmlAttributesWhitelist.indexOf(attrKey) === -1) toRemove.push(attrKey);
         }
         toRemove.forEach((attrKey) => element.removeAttribute(attrKey));
-      }
-      purgeModalImg(element, htmlAttributesWhitelist);
-
-      const alt = element.getAttribute('alt');
-      const srcset = element.getAttribute('srcset') ?? null;
-      const sizes = element.getAttribute('sizes') ?? null;
-      element.className = `${_mauGalleryManager.options('mauPrefixClass')} img-fluid`;
-      element.setAttribute('alt', alt);
-      element.setAttribute('loading', 'lazy');
-
-      if (srcset) element.setAttribute('srcset', srcset);
-      if (sizes) element.setAttribute('sizes', sizes);
-
-      element.style.maxWidth = '85vw';
-      element.style.maxHeight = '85vh';
     }
+    purgeModalImg(element, htmlAttributesWhitelist);
+
+    const alt = element.getAttribute('alt');
+    const src = forceOriginalSrc ? element.getAttribute('src') : element.src;
+    
+    element.className = `${_mauGalleryManager.options('mauPrefixClass')} img-fluid`;
+    element.setAttribute('alt', alt);
+    element.setAttribute('loading', 'lazy');
+    element.setAttribute('src', src);
+
+
+    if (forceOriginalSrc) {
+        element.removeAttribute('srcset');
+        element.removeAttribute('sizes');
+    }
+
+    element.style.minWidth = 'auto';
+    element.style.minHeight = 'auto';
+    element.style.maxWidth = '85vw';
+    element.style.maxHeight = '85vh';
+}
+
 
     initializeSize() {
       // * ... Work-around (4): set the modal display to flex to have a beautifully min-width: fit-content modal (also give a look to some inline styles in the generated modal HTML).
