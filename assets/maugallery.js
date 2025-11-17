@@ -114,7 +114,7 @@ Object.assign(_mauGalleryManager, {
         const modalWrapperClass = _mauGalleryManager.options('modalWrapperClass');
 
         const lightbox = `<div class="${mauPrefixClass} ${modalWrapperClass}">
-               <div class="${mauPrefixClass} modal fade" id="${lightboxId}" tabindex="-1" role="dialog" aria-hidden="true" style="user-select:none;-webkit-user-select:none;">
+               <div class="${mauPrefixClass} modal fade" id="${lightboxId}" tabindex="-1" role="dialog"  style="user-select:none;-webkit-user-select:none;">
                  <div class="modal-dialog" role="document" style="margin:auto;max-width:unset;">
                    <div class="modal-content" style="min-width:fit-content !important;">
                      <div class="modal-body">
@@ -122,10 +122,10 @@ Object.assign(_mauGalleryManager, {
                          <div class="carousel-inner">
                          </div>
                          <button aria-label="${prevImgBtnLabel}" class="d-block carousel-control-prev" type="button" data-bs-target="#${lightboxId}-carousel" data-bs-slide="prev" style="display:none;touch-action:manipulation;">
-                           <span class="carousel-control-prev-icon ${mauPrefixClass} mg-prev" aria-hidden="true"></span>
+                           <span class="carousel-control-prev-icon ${mauPrefixClass} mg-prev" ></span>
                          </button>
                          <button aria-label="${nextImgBtnLabel}" class="d-block carousel-control-next" type="button" data-bs-target="#${lightboxId}-carousel" data-bs-slide="next" style="display:none;touch-action:manipulation;">
-                           <span class="carousel-control-next-icon ${mauPrefixClass} mg-next" aria-hidden="true"></span>
+                           <span class="carousel-control-next-icon ${mauPrefixClass} mg-next" ></span>
                          </button>
                        </div>
                      </div>
@@ -355,7 +355,6 @@ Object.assign(_mauGalleryManager, {
       if (!singleItemElement && relatedMauGalleryInstance.options('navigation')) {
         carouselElement.removeAttribute('data-bs-touch');
         lightboxButtons.forEach((button) => {
-          button.removeAttribute('aria-hidden');
           button.classList.add('d-block');
         });
         // * ... Work-around (2): force the keyboard navigation to be immediately available as soon the focus is placed on a carousel button.
@@ -372,7 +371,6 @@ Object.assign(_mauGalleryManager, {
       } else {
         carouselElement.setAttribute('data-bs-touch', 'false');
         lightboxButtons.forEach((button) => {
-          button.setAttribute('aria-hidden', 'true');
           button.classList.remove('d-block');
         });
       }
