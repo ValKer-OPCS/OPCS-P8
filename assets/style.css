@@ -89,9 +89,15 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
+#about-me .about-me__introduction {
+	font-size: 16px;
+	width: 60%;
+}
+
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 28px;
 }
 .gallery .nav {
 	justify-content: center;
@@ -143,6 +149,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 40px;
 
 }
 .quote__author {
@@ -224,6 +231,9 @@ form input {
 	border: solid 1px;
 	height: 2.5em;
 	margin-bottom: 20px;
+}
+form h2{
+	font-size: 28px;
 }
 
 form textarea {
