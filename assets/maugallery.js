@@ -12,7 +12,7 @@ Object.assign(_mauGalleryManager.mauGalleryGlobalConfig, {
   anyImageServedByHTTP1Server: true,
   prevImgButtonLabel: 'Previous image',
   nextImgButtonLabel: 'Next image',
-  disableFiltersButtonLabel: 'All',
+  disableFiltersButtonLabel: 'Tous',
   modalTriggerClass: 'modal-trigger',
   galleryItemClass: 'gallery-item',
   modalWrapperClass: 'modal-component',
